@@ -1,0 +1,37 @@
+.leaderboard__area {
+  padding: 3rem 0;
+  text-align: center;
+}
+.leaderboard .container > img {
+  width: 100%;
+}
+.leaderboard .container {
+  position: relative;
+}
+.leaderboard__btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+}
+.leaderboard__btn .btn__round {
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+/* responsive */
+@media screen and (max-width: 910px) {
+  .leaderboard__btn .btn__round {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .leaderboard__btn .btn__round {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 615px) {
+  .leaderboard__btn .btn__round {
+    font-size: 1.5rem;
+  }
+}

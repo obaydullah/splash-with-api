@@ -1,0 +1,233 @@
+.leaderboard__card--area {
+  padding: 4rem 0;
+}
+.leaderboard__cards {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.leaderboard__card {
+  width: 32rem;
+  height: 37rem;
+  background-image: url("/images/card-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.leaderboard__card.middle {
+  width: 37rem;
+  height: 42rem;
+  background-image: url("/images/card-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.leaderboard__card.middle {
+  margin-top: -3rem;
+}
+.leaderboard__card.middle .leaderboard__card--content {
+  padding-top: 18rem;
+}
+.leaderboard__card.middle > img {
+  width: 20rem;
+}
+.leaderboard__card .user,
+.leaderboard__card .wagered {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.leaderboard__card .name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.leaderboard__card .amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.leaderboard__card .amount span {
+  color: #f29f51;
+}
+.leaderboard__card .reward {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+.leaderboard__card > img {
+  position: absolute;
+  width: 16rem;
+  height: auto;
+  left: 50%;
+  top: -7rem;
+  transform: translateX(-50%);
+  height: auto;
+}
+.leaderboard__card--content {
+  padding-top: 12rem;
+}
+.leaderboard__card--btn {
+  background-image: url("/images/card-btn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 3.2rem;
+  color: #f29f51;
+  font-weight: 800;
+  padding: 1rem 9rem;
+}
+
+/* leaderboard area  */
+.leaderboard__area {
+  padding: 10rem 0;
+  color: #fff;
+}
+.leaderboard {
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.leaderboard .title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.leaderboard .subtitle {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.times__remaining {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.times__remaining div {
+  background-image: url("/images/num_bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 9.7rem;
+  width: 9.7rem;
+}
+.times__remaining div p {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+.times__remaining div p.num {
+  font-size: 4.4rem;
+  font-weight: bold;
+}
+
+/* challengers */
+.challengers {
+  position: relative;
+  z-index: 1;
+}
+.challengers::before {
+  position: absolute;
+  top: -33%;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  content: "";
+  background-image: url("/images/leaderboardtable_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.challengers__title {
+  text-align: center;
+  background-image: url("/images/card-title.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 4.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3rem;
+  position: absolute;
+  top: -18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.challengers__header {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  background-image: linear-gradient(to bottom, #005db2, #002344);
+  padding: 1.5rem 10rem;
+  outline: 2px solid #005db2;
+  outline-offset: -0.5rem;
+  border-radius: 0.5rem;
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.8);
+}
+.challengers__header p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.challengers__header p:nth-child(3) {
+  margin-left: auto;
+}
+.challengers__table {
+  background-image: linear-gradient(to top, #005db2, #002344);
+  margin: 0 3rem;
+  padding: 3rem 4rem;
+  border-radius: 0.5rem;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+  border-top: none;
+}
+.challengers__item {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  background-color: #001c36;
+  padding: 1rem 3rem;
+  border: 1px solid #005db2;
+  margin-bottom: 1rem;
+}
+.challengers__item p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.challengers__item p:nth-child(2) {
+  margin-left: 4.5rem;
+}
+.challengers__item p:nth-child(3) {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+.leaderboard__area .container {
+  overflow-x: auto;
+}
+.leaderboard__inner {
+  width: 1140px;
+}
+
+/* responsive  */
+@media screen and (max-width: 1124px) {
+  .leaderboard__cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .leaderboard__card.middle {
+    width: 32rem !important;
+    height: 37rem !important;
+    margin-top: 0 !important;
+  }
+  .leaderboard__card {
+    margin-bottom: 10rem;
+  }
+}

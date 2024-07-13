@@ -1,0 +1,77 @@
+:root {
+  --color-dark-primary: #011b33;
+  --color-dark-secondary: #012445;
+  --color-dark-tertiary: #075eb1;
+  --color-light-primary: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 1rem;
+  background-color: #00203c;
+  position: relative;
+}
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url("/images/bg.png");
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* responsive  */
+@media screen and (max-width: 1000px) {
+  .gamble h3 {
+    font-size: 3rem !important;
+  }
+  .gamble p {
+    font-size: 1.2rem !important;
+  }
+  .mainmenu {
+    display: none !important;
+  }
+  .header__right .btn {
+    display: none !important;
+  }
+  .menubar {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .gamble h3 {
+    font-size: 2rem !important;
+  }
+  .gamble p {
+    font-size: 0.8rem !important;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

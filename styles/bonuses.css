@@ -1,0 +1,64 @@
+.bonuses .card-top {
+  margin-top: -10rem;
+}
+.bonuses .card-top .title {
+  margin-top: 9.2rem;
+}
+.partner__card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.others {
+  margin-top: 13rem;
+}
+.partner,
+.other {
+  text-align: center;
+}
+.partner > img,
+.other > img {
+  width: 30rem;
+  height: auto;
+}
+.other__card .other__card--item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+/* .other__card .other__card--item:nth-child(2) {
+  margin-top: -12rem;
+} */
+
+/* gamble ara  */
+.gamble__area {
+  padding: 4rem 0;
+  text-align: center;
+  color: #fff;
+  margin: 4rem 0;
+}
+.gamble {
+  background-image: url("/images/gamble__bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem 10rem;
+}
+.gamble h3 {
+  font-size: 4.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.gamble p {
+  font-size: 1.6rem;
+  color: #828282;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.gamble p a {
+  color: #ffa53c;
+}

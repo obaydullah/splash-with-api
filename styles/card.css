@@ -1,0 +1,129 @@
+.bonuses__area {
+  padding: 4rem 0;
+}
+.bonuses__img {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+}
+.bonuses__img .small {
+  height: 22rem;
+  width: 22rem;
+}
+.bonuses__img .large {
+  height: 30rem;
+  width: 30rem;
+}
+
+/* card css */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.card {
+  background-image: url("/images/card-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 38rem;
+  height: auto;
+  text-align: center;
+  margin-bottom: -15rem;
+  max-width: 35rem;
+}
+.card .title {
+  background-image: url("/images/card-title.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  display: inline-block;
+  margin-top: 4rem;
+}
+.card .title h3 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 6rem;
+}
+.card .rewards {
+  background-image: url("/images/rewards.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+.card .rewards h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+.card .rewards p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card .use__code {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.card__btn {
+  background-image: url("/images/card-btn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 13rem;
+}
+.btn__card {
+  background-color: transparent;
+  border: none;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 2.5rem;
+  cursor: pointer;
+}
+
+/* responsive  */
+
+@media screen and (max-width: 900px) {
+  .bonuses__img .small {
+    width: 18rem;
+    height: 18rem;
+  }
+  .bonuses__img .large {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .bonuses__img .small {
+    width: 14rem;
+    height: 14rem;
+  }
+  .bonuses__img .large {
+    width: 16rem;
+    height: 16rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .bonuses__img .small {
+    width: 12rem;
+    height: 12rem;
+  }
+  .bonuses__img .large {
+    width: 14rem;
+    height: 14rem;
+  }
+}
