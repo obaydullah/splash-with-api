@@ -1,0 +1,77 @@
+.leaderboard__card {
+  width: 32rem;
+  height: 37rem;
+  background-image: url("/images/card-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.leaderboard__card:last-child {
+  margin-bottom: 0;
+}
+.leaderboard__card.middle {
+  width: 37rem;
+  height: 42rem;
+  background-image: url("/images/card-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+.leaderboard__card.middle {
+  margin-top: -3rem;
+}
+.leaderboard__card.middle .leaderboard__card--content {
+  padding-top: 18rem;
+}
+.leaderboard__card.middle > img {
+  width: 20rem;
+}
+.leaderboard__card .user,
+.leaderboard__card .wagered {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.leaderboard__card .name {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.leaderboard__card .amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.leaderboard__card .amount span {
+  color: #f29f51;
+}
+.leaderboard__card .reward {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+.leaderboard__card > img {
+  position: absolute;
+  width: 16rem;
+  height: auto;
+  left: 50%;
+  top: -7rem;
+  transform: translateX(-50%);
+  height: auto;
+}
+.leaderboard__card--content {
+  padding-top: 12rem;
+}
+.leaderboard__card--btn {
+  background-image: url("/images/card-btn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 3.2rem;
+  color: #f29f51;
+  font-weight: 800;
+  padding: 1rem 9rem;
+}

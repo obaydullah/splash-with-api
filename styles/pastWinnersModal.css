@@ -1,0 +1,133 @@
+.winners__modal--area {
+  padding: 4rem 0;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+.winners__modal--area .container {
+  overflow-x: auto;
+}
+.winners__modal {
+  max-width: 1140px;
+}
+
+@media screen and (max-width: 760px) {
+  .winners__modal {
+    width: 760px;
+  }
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  background-image: linear-gradient(to bottom, #005db2, #002344);
+  padding: 1.5rem 10rem;
+  outline: 2px solid #005db2;
+  outline-offset: -0.5rem;
+  border-radius: 0.5rem;
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.8);
+}
+.modal__close {
+  margin-left: auto;
+}
+.modal__table {
+  background-image: linear-gradient(to top, #005db2, #002344);
+  margin: 0 3rem;
+  padding: 2rem 4rem;
+  border-radius: 0.5rem;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.8);
+  border-top: none;
+}
+.modal__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.modal__subtitle {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.modal__header--bottom {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  gap: 5rem;
+  margin-bottom: 1rem;
+  padding: 0 2rem;
+}
+.modal__header--bottom .wagered {
+  margin-left: auto;
+}
+.modal__header--bottom .prize {
+  margin-right: 2rem;
+}
+.modal__table--item {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  background-color: #001c36;
+  padding: 1rem 4rem;
+  border: 1px solid #005db2;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.modal__table--item .item__wagered {
+  margin-left: auto;
+}
+.modal__close {
+  font-size: 4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* modal pagination  */
+.modal__pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem 0;
+}
+.btn__pagination {
+  background-color: #002344;
+  border: 2px solid #1973c9;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn__pagination:disabled {
+  cursor: not-allowed;
+  background-color: #00234477;
+}
+
+.pagination__num {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.pagination__num--btn {
+  background-color: #002344;
+  border: 2px solid #1973c9;
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

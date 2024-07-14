@@ -1,33 +1,13 @@
 import { LeaderboardRemainingTime } from "./LeaderboardRemainingTime";
 import { formatter } from "@/lib/utils";
 
-const buildUrl = () => {
-  const API_BASE_URL =
-    "https://packdraw.com/api/v1/affiliates/leaderboard?after=";
-  const API_KEY = "e174b184-87d4-47e4-85da-1fac082d9461";
-
-  const time = `${new Date().getMonth()}-01-${new Date().getUTCFullYear()}`;
-
-  return `${API_BASE_URL}${time}&apiKey=${API_KEY}`;
-};
-
-const getData = async () => {
-  try {
-    const response = await fetch(buildUrl());
-    const data = await response.json();
-    if (data?.leaderboard?.length > 0) {
-      return data;
-    } else {
-      console.log("Error", data);
-    }
-  } catch (error) {
-    console.error(error);
-  }
-  return null;
-};
+import { getLeaderboard } from "@/actions/get-leaderboard";
 
 export const Leaderboard = async () => {
-  const data = await getData();
+  const data = await getLeaderboard(
+    new Date().getUTCMonth() + 1,
+    new Date().getUTCFullYear()
+  );
   return (
     <>
       {/* Leaderboard Card Area Start */}
