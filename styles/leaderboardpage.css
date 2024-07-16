@@ -216,6 +216,43 @@
   width: 1140px;
 }
 
+/* past winners */
+.past__winners {
+  padding: 4rem 0;
+  text-align: center;
+}
+.winners__title {
+  font-size: 4.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 12rem;
+}
+.past__winner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.past__winner--btn {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  display: inline-block;
+  background-image: url("/images/winners__btn--bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem 6rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 /* responsive  */
 @media screen and (max-width: 1124px) {
   .leaderboard__cards {

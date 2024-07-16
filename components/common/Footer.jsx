@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../../styles/footer.css";
 
 export default function Footer() {
@@ -6,9 +7,9 @@ export default function Footer() {
       <div className="container">
         <div className="footer">
           <div className="footer__left">
-            <a href="#">Home</a>
-            <a href="#">Leaderboard</a>
-            <a href="#">Bonuses</a>
+            <Link href="/">Home</Link>
+            <Link href="/leaderboard">Leaderboard</Link>
+            <Link href="/bonuses">Bonuses</Link>
           </div>
           <div className="footer__middle">
             <img src="/images/footer__logo.png" alt="" />

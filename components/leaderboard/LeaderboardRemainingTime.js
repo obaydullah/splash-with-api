@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import { getTargetDate, getRemainingDays } from "@/lib/utils";
+import { getRemainingDays, getTargetDate } from "@/lib/utils";
 
 export const LeaderboardRemainingTime = () => {
   const [remainingTime, setRemainingTime] = useState(() => {
@@ -17,7 +17,7 @@ export const LeaderboardRemainingTime = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("Inside interval");
+      // console.log("Inside interval");
       updateTime();
     }, 300);
 

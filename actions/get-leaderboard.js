@@ -19,10 +19,10 @@ export const getLeaderboard = async (month, year) => {
     if (data?.leaderboard?.length > 0) {
       return data;
     } else {
-      console.log("Error", data);
+      // console.log("Error", data);
     }
   } catch (error) {
-    console.error(error);
+    // console.error(error);
   }
   return null;
 };

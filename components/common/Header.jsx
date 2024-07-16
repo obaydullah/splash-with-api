@@ -57,13 +57,13 @@ export default function Header() {
             <IoMdClose className="close" onClick={handleMenu} />
             <ul className="mobilemenu__list">
               <li>
-                <a href="#">Home</a>
+                <Link href="/">Home</Link>
               </li>
               <li>
-                <a href="#">Bonuses</a>
+                <Link href="/bonuses">Bonuses</Link>
               </li>
               <li>
-                <a href="#">Leaderboard</a>
+                <Link href="/leaderboard">Leaderboard</Link>
               </li>
             </ul>
           </div>

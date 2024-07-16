@@ -28,7 +28,7 @@ export const PastWinnersList = () => {
         setData(data?.data?.leaderboard);
       }
 
-      console.log(data);
+      // console.log(data);
     } catch (error) {
     } finally {
       setLoading(false);
@@ -36,7 +36,7 @@ export const PastWinnersList = () => {
   };
 
   useEffect(() => {
-    console.log("effect");
+    // console.log("effect");
     getPastWinnersList();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [month]);
@@ -49,7 +49,7 @@ export const PastWinnersList = () => {
     return <div>Loading...</div>;
   }
 
-  console.log("Updating...");
+  // console.log("Updating...");
 
   return (
     <>

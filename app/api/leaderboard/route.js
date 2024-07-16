@@ -12,7 +12,7 @@ export const POST = async (request) => {
   try {
     const body = await request.json();
 
-    console.log(body);
+    // console.log(body);
 
     const data = await getLeaderboard(body.month, body.year);
 
